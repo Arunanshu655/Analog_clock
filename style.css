@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('wood-background.jpg');
+    /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    /* This property ensures the image covers the entire background */
+    background-repeat: no-repeat
+}
+
+#clockcontainer {
+    height: 50vw;
+    width: 50vw;
+    /* border: 2px solid red; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bigframe {
+    height: 30em;
+    width: 30em;
+    border-radius: 50%;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    position: relative;
+}
+
+.smallframe {
+    height: 27em;
+    width: 27em;
+    border-radius: 50%;
+    background-color: aliceblue;
+    position: relative;
+    background-image: url('R.jpg');
+    /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    /* This property ensures the image covers the entire background */
+    background-repeat: no-repeat
+}
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background-color: black;
+    border-radius: 15px;
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 2%;
+    height: 20%;
+    top: 31%;
+    left: 50%
+}
+
+#minute {
+    width: 1%;
+    height: 27%;
+    background-color: rgba(126, 126, 126, 0.941);
+    top: 24%;
+    left: 50.5%;
+}
+
+#second {
+    width: 0.5%;
+    height: 35%;
+    background-color: rgba(160, 159, 159, 0.941);
+    top: 16%;
+    left: 50.75%;
+}
+
+#boltu {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    border: 10px solid grey;
+    background-color: black;
+    position: inherit;
+    top: 47%;
+    left: 47%;
+}
